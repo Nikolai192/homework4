@@ -12,7 +12,7 @@ public class Main {
                 System.out.println("Для вашего устройства приложения нет");
         }
             int clientPhoneOS = 1;
-            int clientDeviceYear = 2013;
+            int clientDeviceYear = 2014;
             if ( clientPhoneOS == 1 && clientDeviceYear <= 2015 ) {
                 System.out.println("Скачай облегченную версию приложения для Android по ссылке");
             } else if (clientPhoneOS == 1 && clientDeviceYear > 2015) {
