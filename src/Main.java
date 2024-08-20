@@ -11,13 +11,12 @@ public class Main {
             default:
                 System.out.println("Для вашего устройства приложения нет");
         }
-            char clientPhoneOS = 0;
-            char clientDeviceYear = 2018;
+            int clientPhoneOS = 1;
+            int clientDeviceYear = 2013;
             if ( clientPhoneOS == 1 && clientDeviceYear <= 2015 ) {
                 System.out.println("Скачай облегченную версию приложения для Android по ссылке");
-                if (clientPhoneOS == 1 && clientDeviceYear > 2015) {
+            } else if (clientPhoneOS == 1 && clientDeviceYear > 2015) {
                     System.out.println("Установите версию приложения для Android по ссылке");
-                }
                 } else if (clientPhoneOS == 0 && clientDeviceYear <= 2015) {
                     System.out.println("Скачай облегченную версию приложения для IOS по ссылке");
                 } else {
@@ -31,7 +30,7 @@ public class Main {
             } else {
                 System.out.println( + year + " год не високосный");
             }
-        int deliveryDistance = 955;
+        int deliveryDistance = 5;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуются одни сутки на доставку");
             if (deliveryDistance > 20 && deliveryDistance < 60) {
